@@ -62,7 +62,14 @@ $ serverless create --template aws-nodejs
 Generates handler.js and serverless.yml
 
 $ serverless create --template aws-java-maven
-Generates pom.xml and serverless.yml
+Generates pom.xml, serverless.yml, src/main/java, and src/main/resources
+src/main/java:
+    com/serverless:
+        ApiGatewayResponse.java
+        Handler.java
+        Response.java
+src/main/resources:
+    log4j.xml
 
 $ serverless create --template aws-python3
 Generates handler.py and serverless.yml
